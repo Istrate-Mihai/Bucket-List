@@ -1,33 +1,27 @@
 @charset "utf-8";
-* {
-    box-sizing: border-box;
-}
-
 body {
-
-    margin: 0;
-    padding: 0;
-    background-image:url("bucket-list.png");
+    
+    background-image: url("bucket-list.png");
+    background-attachment: fixed; 
     background-repeat: no-repeat;
     background-size: contain;
-    background-attachment: fixed;   
 }
-#myForm {
-    margin-left:220px;
+textarea{
+    resize: none;
+}
+form {
+    margin-left: 200px;
     margin-top: 120px;
-       
-}
-
-input,textarea {
-  background-color:lavender;
-     
-}
-
-label {
-    font-weight: bold;
 }
 input[type="submit"]{
-   color: blue;
-   font-size: 12px;
-   font-weight: bold;
+
+font-size: 20px;
+color: blue;
+margin-top: -6px;
+
+
+}
+#errorMessage {
+    margin-left: 800px;
+    margin-top: -300px;
 }
