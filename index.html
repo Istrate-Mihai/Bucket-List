@@ -4,28 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="app.js"></script>
     <title>Document</title>
+    
 </head>
 <body>
-    
-      <form id="myForm" action="" method="POST">
+    <form name="myForm" action="javascript:alert('Form is submitted!')" onsubmit="return validateForm(this)"> 
+    <label for="Activity_Title">Enter the title of your activity down here:</label><br><br>
+    <input type="text" id="Activity_Title" name="Activity_Title"><br><br>
+    <label for="Activity_Content">Enter the description of your activity down here:</label><br><br>
+    <textarea cols="30" rows="5" name="Activity_Content"></textarea><br><br>
+    <input type="submit" value="Send">
+   </form>
    
-          <label for="activity_title">Enter the title of your activity here:</label>
-          <br><br>
-          <input type="text" id="activity_title" name="activity_title">
-          <br><br>
-          <label for="activity_content">Enter the content of your activity here:</label>
-          <br><br>
-          <textarea id="activity_content" name="activity_content" cols="30" rows="5"></textarea>
-          <br><br>
-          <input id="submitButton" name="submitButton" type="submit" value="Register this activity">
-          
-
-
-      </form>
-
-
-     
+   
+   <p id="errorMessage"></p> 
+   
+ 
+   <script src="app.js"></script>
 </body>
 </html>
