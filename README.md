@@ -1,3 +1,2 @@
-# What_To_Javascript_Do
-
-Just a javascript powered to do list! 
+This is a Vanilla JS bucket list.
+To store the data it uses the Web Storage API!
